@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Malla Interactiva - Arquitectura FADU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Interactiva - Arquitectura FADU</h1>
+
+  <div class="nivel" id="cbc">
+    <h2>CBC</h2>
+    <div class="materias">
+      <button class="materia" onclick="mostrarInfo('ICSE')">ICSE</button>
+      <button class="materia" onclick="mostrarInfo('IPC')">IPC</button>
+      <button class="materia" onclick="mostrarInfo('ICP1')">ICP1</button>
+      <button class="materia" onclick="mostrarInfo('ICP2')">ICP2</button>
+      <button class="materia" onclick="mostrarInfo('Matematica')">Matemática</button>
+      <button class="materia" onclick="mostrarInfo('Filosofia')">Filosofía</button>
+      <button class="materia" onclick="mostrarInfo('T_Dibujo')">Taller de Dibujo</button>
+    </div>
+  </div>
+
+  <div class="nivel" id="nivel2">
+    <h2>2º Año</h2>
+    <div class="materias">
+      <button class="materia" onclick="mostrarInfo('IAC')">IAC</button>
+      <button class="materia" onclick="mostrarInfo('ITC')">ITC</button>
+      <button class="materia" onclick="mostrarInfo('ITE')">ITE</button>
+      <button class="materia" onclick="mostrarInfo('FAA')">FAA</button>
+      <button class="materia" onclick="mostrarInfo('MAT2')">MAT2</button>
+    </div>
+  </div>
+
+  <!-- Podés seguir con los niveles siguientes -->
+
+  <div id="info-materia" class="info-box"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
